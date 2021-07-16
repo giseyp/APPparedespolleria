@@ -1,93 +1,102 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
 
-<head>
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'login')}">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Paredes Ecommerce</title>
-
-
-  <!-- Bootstrap core CSS -->
-<link th:href="@{/vendor/bootstrap/css/bootstrap.min.css}"
-	rel="stylesheet">
-
-<!-- Custom styles for this template -->
-<link th:href="@{/css/heroic-features.css}" rel="stylesheet">
-
-</head>
+<style>
+  .rounded {
+    -webkit-border-radius: 50px !important;
+    -moz-border-radius: 50px !important;
+    border-radius: 50px !important;
+  }
+</style>
 
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" th:href="@{/}">Paredes Ecommerce</a>
-
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" th:href="@{/usuario/login}">Login</a>
-          </li>
-        </ul>
-      </div>    
-    </div>
-  </nav>
-
-
-  <!-- Page Content -->
-  <div class="container">
-
-    <div class="card mb-3">
-      <div class="row no-gutters">
-        <div class="col-md-4">
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-sm-10 mt-5">
+        <div class="form-group row">
+          <h1>Login</h1>
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h2>Ingresar</h2>
+        <form th:object="${user}" th:action="@{/usuario/login}" method="post">
+          <div class="form-group row">
+            <div class="col-sm-2">
+              <label for="userID">User</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="text" th:field="*{userID}" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-2">
+              <label for="password">Password</label>
+            </div>
+            <div class="col-sm-2">
+              <input type="password" th:field="*{password}" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
+              <button th:with="text='Login'" class="btn btn-primary" type="submit" th:text="${text}" />
+            </div>
+          </div>
+        </form>
+        <p th:text="${mensaje}" />
+      </div>
+    </div>
+  </div> -->
 
+  <div class="container">
+    <div class="row justify-content-center align-items-center mt-5">
+      <div class="col-md-4">
+        <div class="card border-0">
+          <div class="card-body">
+            <form th:object="${user}" th:action="@{/usuario/login}" method="post">
+              <div class="form-group">
+                <label>Nombre de usuario:</label>
+                <input type="text" class="form-control" th:field="*{userID}" style="border-radius: 50px;">
+              </div>
+              <div class="form-group">
+                <label>Contraseña:</label>
+                <input type="password" class="form-control" th:field="*{password}" style="border-radius: 50px;">
+              </div>
+              <div class="form-group my-3">
+                <a href="#" class="text-decoration-none">¿Olvidaste tu contraseña?</a>
+              </div>
+              <div class="form-group text-center">
+                <button 
+                  type="submit" 
+                  th:with="text='Iniciar Sesión'"
+                  class="btn" 
+                  th:text="${text}" 
+                  style="background: #F45395; border-radius: 50px;"></button>
+                <a href="/usuario/register" class="btn" style="background: #F45395; border-radius: 50px;">Registrate</a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
-    
-    <form  th:action="@{/usuario/acceder}" method="post">
-      <div class="form-group">
-        <label for="email"> Email:  </label>      
-        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email" required autocomplete="off"> 
-
-      </div>
-
-      <div class="form-group">
-        <label for="pwd"> Contraseña:</label>
-        <input type="password"  class="form-control" id="password" name="password" placeholder="Ingrese su contraseña" required>       
-      </div>
-
-      <div class="form-group">
-        <div class="col-sm-2">
-          <button type="submit" class="btn btn-dark"> <span class="glyphicon glyphicon-ok"></span> Ingresar</button>
-        </div>      
-      </div>    
-    </form>
-    <a th:href="@{/usuario/registro}" class="card-link">Si aún no tiene cuenta aqui puede registrarse</a>
   </div>
-  <!-- /.container -->
+    
 
-  <!-- Footer -->
- <div th:include="usuario/template_usuario.html::footer"></div>
+  
 
-	<!-- Bootstrap core JavaScript -->
-	<script th:src="@{/vendor/jquery/jquery.min.js}"></script>
-	<script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 
+  <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+  <script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
+  <script th:src="@{/webjars/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
+  <script th:src="@{/webjars/jquery.inputmask/jquery.inputmask.min.js}"></script>
+
+  <script>
+    $('.input-group.date').datepicker({
+      autoclose: true,
+      todayHighlight: true
+    });
+  </script>
+  <script>
+    $(":input").inputmask();
+  </script>
 </body>
 
 </html>
