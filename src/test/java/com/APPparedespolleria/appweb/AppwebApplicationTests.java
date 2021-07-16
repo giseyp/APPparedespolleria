@@ -1,4 +1,4 @@
-package com.entrepiscoynazca.appweb;
+package com.APPparedespolleria.appweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
