@@ -1,13 +1,13 @@
-package com.celestechicken.appweb.controller;
+package com.APPparedespolleria.appweb.controller;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.celestechicken.appweb.model.Producto;
-import com.celestechicken.appweb.model.Proforma;
-import com.celestechicken.appweb.model.Usuario;
-import com.celestechicken.appweb.repository.ProductoRepository;
-import com.celestechicken.appweb.repository.ProformaRepository;
+import com.APPparedespolleria.appweb.model.Producto;
+import com.APPparedespolleria.appweb.model.Proforma;
+import com.APPparedespolleria.appweb.model.Usuario;
+import com.APPparedespolleria.appweb.repository.ProductoRepository;
+import com.APPparedespolleria.appweb.repository.ProformaRepository;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

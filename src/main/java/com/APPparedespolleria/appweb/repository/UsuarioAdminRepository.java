@@ -1,8 +1,8 @@
-package com.celestechicken.appweb.repository;
+package com.APPparedespolleria.appweb.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.celestechicken.appweb.model.AdminUsuario;
+import com.APPparedespolleria.appweb.model.AdminUsuario;
 
 public interface UsuarioAdminRepository extends JpaRepository<AdminUsuario,String>{
 

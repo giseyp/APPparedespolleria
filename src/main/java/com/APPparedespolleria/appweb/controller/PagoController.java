@@ -1,4 +1,4 @@
-package com.celestechicken.appweb.controller;
+package com.APPparedespolleria.appweb.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,17 +7,17 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.celestechicken.appweb.model.Cliente;
-import com.celestechicken.appweb.model.DetallePedido;
-import com.celestechicken.appweb.model.Pago;
-import com.celestechicken.appweb.model.Pedido;
-import com.celestechicken.appweb.model.Proforma;
-import com.celestechicken.appweb.model.Usuario;
-import com.celestechicken.appweb.repository.ClienteRepository;
-import com.celestechicken.appweb.repository.DetallePedidoRepository;
-import com.celestechicken.appweb.repository.PagoRepository;
-import com.celestechicken.appweb.repository.PedidoRepository;
-import com.celestechicken.appweb.repository.ProformaRepository;
+import com.APPparedespolleria.appweb.model.Cliente;
+import com.APPparedespolleria.appweb.model.DetallePedido;
+import com.APPparedespolleria.appweb.model.Pago;
+import com.APPparedespolleria.appweb.model.Pedido;
+import com.APPparedespolleria.appweb.model.Proforma;
+import com.APPparedespolleria.appweb.model.Usuario;
+import com.APPparedespolleria.appweb.repository.ClienteRepository;
+import com.APPparedespolleria.appweb.repository.DetallePedidoRepository;
+import com.APPparedespolleria.appweb.repository.PagoRepository;
+import com.APPparedespolleria.appweb.repository.PedidoRepository;
+import com.APPparedespolleria.appweb.repository.ProformaRepository;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;

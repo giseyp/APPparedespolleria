@@ -1,4 +1,4 @@
-package com.celestechicken.appweb.model;
+package com.APPparedespolleria.appweb.model;
 
 import java.math.BigDecimal;
 import java.util.Date;

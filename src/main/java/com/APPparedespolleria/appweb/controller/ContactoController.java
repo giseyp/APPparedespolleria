@@ -1,4 +1,4 @@
-package com.celestechicken.appweb.controller;
+package com.APPparedespolleria.appweb.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 
 import javax.validation.Valid;
 
-import com.celestechicken.appweb.model.Contacto;
-import com.celestechicken.appweb.repository.ContactoRepository;
+import com.APPparedespolleria.appweb.model.Contacto;
+import com.APPparedespolleria.appweb.repository.ContactoRepository;
 
 @Controller
 public class ContactoController{

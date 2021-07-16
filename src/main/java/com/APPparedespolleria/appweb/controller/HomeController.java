@@ -1,4 +1,4 @@
-package com.celestechicken.appweb.controller;
+package com.APPparedespolleria.appweb.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

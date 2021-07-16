@@ -1,4 +1,4 @@
-package com.celestechicken.appweb.controller;
+package com.APPparedespolleria.appweb.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,8 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.celestechicken.appweb.model.Producto;
-import com.celestechicken.appweb.repository.ProductoRepository;
+import com.APPparedespolleria.appweb.model.Producto;
+import com.APPparedespolleria.appweb.repository.ProductoRepository;
 
 import javax.validation.Valid;
 

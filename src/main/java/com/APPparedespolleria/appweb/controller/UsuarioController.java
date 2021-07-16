@@ -1,11 +1,11 @@
-package com.celestechicken.appweb.controller;
+package com.APPparedespolleria.appweb.controller;
 
 import java.util.Optional;
 
 import javax.validation.Valid;
 
-import com.celestechicken.appweb.model.Usuario;
-import com.celestechicken.appweb.repository.UsuarioRepository;
+import com.APPparedespolleria.appweb.model.Usuario;
+import com.APPparedespolleria.appweb.repository.UsuarioRepository;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

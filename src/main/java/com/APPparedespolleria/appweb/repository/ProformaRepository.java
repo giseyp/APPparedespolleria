@@ -1,11 +1,11 @@
-package com.celestechicken.appweb.repository;
+package com.APPparedespolleria.appweb.repository;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.celestechicken.appweb.model.Producto;
-import com.celestechicken.appweb.model.Proforma;
-import com.celestechicken.appweb.model.Usuario;
+import com.APPparedespolleria.appweb.model.Producto;
+import com.APPparedespolleria.appweb.model.Proforma;
+import com.APPparedespolleria.appweb.model.Usuario;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

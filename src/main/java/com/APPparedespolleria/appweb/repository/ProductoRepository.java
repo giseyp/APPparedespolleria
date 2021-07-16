@@ -1,6 +1,6 @@
-package com.celestechicken.appweb.repository;
+package com.APPparedespolleria.appweb.repository;
 
-import com.celestechicken.appweb.model.Producto;
+import com.APPparedespolleria.appweb.model.Producto;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

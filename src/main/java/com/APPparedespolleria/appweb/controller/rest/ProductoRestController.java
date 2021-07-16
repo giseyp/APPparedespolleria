@@ -1,4 +1,4 @@
-package com.celestechicken.appweb.controller.rest;
+package com.APPparedespolleria.appweb.controller.rest;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,8 +15,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import java.util.*;
 
-import com.celestechicken.appweb.model.Producto;
-import com.celestechicken.appweb.repository.*;
+import com.APPparedespolleria.appweb.model.Producto;
+import com.APPparedespolleria.appweb.repository.*;
 
 @RestController
 @RequestMapping(value = "api/productos", produces = "application/json")
